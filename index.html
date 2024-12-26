@@ -95,12 +95,39 @@
                 box-shadow: 0 0 10px red;
             }
         }
+        .sponsor-carousel {
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 30px 0;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+        .sponsor-carousel img {
+            height: 100px;
+            margin: 0 15px;
+            object-fit: contain;
+            display: inline-block;
+            animation: slide 10s linear infinite;
+        }
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
         @media (max-width: 768px) {
             .header-title {
                 font-size: 1.5em;
             }
             .countdown {
                 font-size: 1.5em;
+            }
+            .sponsor-carousel img {
+                height: 70px;
             }
         }
     </style>
@@ -148,6 +175,14 @@
                 </div>
                 <button type="submit" class="btn btn-warning">Realizar apuesta</button>
             </form>
+        </div>
+
+        <!-- Sponsor Carousel -->
+        <div class="sponsor-carousel">
+            <img src="img\space.jpg" alt="Space por Juan Emilio ">
+            <img src="img\space.jpg" alt="Space por Juan Emilio ">
+            <img src="img\space.jpg" alt="Space por Juan Emilio ">
+            <img src="img\space.jpg" alt="Space por Juan Emilio ">
         </div>
     </main>
 
