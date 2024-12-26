@@ -108,24 +108,26 @@
                 Tu navegador no soporta el elemento de audio.
             </audio>
         </div>
-        <div class="text-center my-5">
-            <h3 class="text-warning">¡Apuesta por tu luchador favorito!</h3>
-            <form class="mt-4">
-                <div class="mb-3">
-                    <label for="bet-amount" class="form-label">Cantidad a apostar:</label>
-                    <input type="number" class="form-control" id="bet-amount" placeholder="Ingresa la cantidad" required>
-                </div>
-                <div class="mb-3">
-                    <label for="fighter-choice" class="form-label">Elige a tu luchador:</label>
-                    <select class="form-select" id="fighter-choice">
-                        <option value="Lizardy">Lizardy</option>
-                        <option value="Ken">Ken</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-warning">Realizar apuesta</button>
-            </form>
-        </div>
+
     </main>
+
+    <div class="text-center my-5">
+        <h3 class="text-warning">¡Apuesta por tu luchador favorito!</h3>
+        <form class="mt-4">
+            <div class="mb-3">
+                <label for="bet-amount" class="form-label">Cantidad a apostar:</label>
+                <input type="number" class="form-control" id="bet-amount" placeholder="Ingresa la cantidad" required>
+            </div>
+            <div class="mb-3">
+                <label for="fighter-choice" class="form-label">Elige a tu luchador:</label>
+                <select class="form-select" id="fighter-choice">
+                    <option value="Lizardy">Lizardy</option>
+                    <option value="Ken">Ken</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-warning">Realizar apuesta</button>
+        </form>
+    </div>
 
     <footer class="text-center py-3 bg-dark bg-opacity-75 text-light">
         <p>Prepárate para la pelea más emocionante del año en el reparto. ¡Quien gana en el amor!</p>
@@ -152,7 +154,6 @@
             }
         }
 
-        
 
         const intervalo = setInterval(actualizarCuentaRegresiva, 1000);
     </script>
